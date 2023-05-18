@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="Survey-Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        sup {
+            color: rgb(227, 5, 5);
+        }
+
+        .checked {
+            color: coral;
+        }
+
+        .container-fluid{
+            padding: 20px;
+        }
+
+        @media (max-width: 400px) {
+            td{
+                float:left;
+                display:block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <form>
+            <label><b>Name</b><sup>*</sup></label>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="firstname">
+                    <p>First</p>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="lastname">
+                    <p>Last</p>
+                </div>
+            </div>
+            <div class="col">
+                <label><b>Email</b><sup>*</sup></label>
+                <input type="email" class="form-control" name="email">
+            </div>
+
+        </form>
+   
+
+    <div>
+        <p><b>Your Experience</b><sup>*</sup></p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+
+    </div>
+
+    <div>
+        <p>Overall,how would you rate your experience with us?</p>
+    </div>
+    <div>
+        <p><b>How satisfied are you with</b><sup>*</sup></p>
+    </div>
+    <div>
+        <table class="table table-striped" class="table-responsive-sm" >
+            <tbody>
+                <tr >
+                    <td>Purchase</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purchase" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Very Unsatisfied
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purchase" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Unsatisfied
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purchase" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Neutral </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purchase" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Satisfied
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="purchase" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Very Satisfied
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="col-sm-2">
+                    <td>Service</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Very Unsatisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Unsatisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Neutral </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Satisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="service" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Very Satisfied
+                                </label>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr class="col-sm-2">
+                    <td>Company Overall</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company Overall" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Very Unsatisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company Overall" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Unsatisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company Overall" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Neutral </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company Overall" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Satisfied
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company Overall" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Very Satisfied
+                                </label>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div>
+        <p><b>How likely are you to</b><sup>*</sup></p>
+    </div>
+    <div>
+        <table class="table table-striped" class="table-responsive-sm">
+            <tbody>
+                <tr class="col-sm-2">
+                    <td>Buy from us again</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Buy" id="flexRadioDefault1">
+                            <label class="form-check-label" for="Buy">
+                                Very Unlikely
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Buy" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="Buy">
+                                Unlikely
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Buy" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="Buy">
+                                Neutral
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Buy" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="Buy">
+                                likely
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Buy" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="Buy">
+                                Very likely
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="col-sm-2">
+                    <td>Recommend our product to others</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="product" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="product">
+                                    Very Unlikely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="product" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="product">
+                                    Unlikely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="product" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="product">
+                                    Neutral
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="product" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="product">
+                                    likely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="product" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="product">
+                                    Very likely
+                                </label>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr class="col-sm-2">
+                    <td>Recommand our Company to others</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault">
+                                   Very Unlikely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault">
+                                    Unlikely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault">
+                                    Neutral
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault">
+                                    likely
+                                </label>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                                <label class="form-check-label" for="flexRadioDefault">
+                                    Very likely
+                                </label>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+    <div>
+        <label for="comment"><b>Additional comments or suggestions</b></label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-light">Submit</button>
+    </div>
+    </form>
+    </div>
+
+</div>
+</body>
+
+</html>
